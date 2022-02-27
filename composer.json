@@ -1,0 +1,7 @@
+{
+    "require": {
+        "spatie/simple-excel": "^1.15",
+        "tightenco/collect": "^9.2",
+        "illuminate/collections": "^9.2"
+    }
+}
