@@ -38,8 +38,7 @@ function array_columns($input, $column_keys=null, $index_key=null){
 }
 
 if(isset($_GET["ca"])){
-
-if($_GET['ca'] == 'appList'){
+if($_GET['ca'] == 'Eink_AppStore.AppList'){
     
 $apps = SimpleExcelReader::create("app.xlsx")->getRows();
 
@@ -50,21 +49,27 @@ $reps = array(
 		'list'=>array_columns($apps,'id,name,icon,appVersion,appSize,appName,appDesc'),
 		'page'=>array(
 			'currentPage'=>1,
-			'pageSize'=>7,
+			'pageSize'=>$_GET['size'],
 			'totalPage'=>1,
 			'totalRecord'=>$app_counter
 	        )
 	    )
 	);
 	
-}elseif ($_GET['ca'] == 'appInfo') {
+}elseif ($_GET['ca'] == 'Eink_AppStore.AppInfo') {
     
 $app = SimpleExcelReader::create("app.xlsx")->getRows()
   ->filter(function(array $rowProperties) {
        return $rowProperties['appName'] == $_GET['appName'];
     });
 
-$reps = array_columns($app,'id,name,icon,appVersion,appSize,categoryId,appName,appUrl,appDesc,explain');
+$reps = array(
+	'code'=>0,
+	'msg'=>'',
+	'body'=>array_columns($app,'id,name,icon,appVersion,appSize,categoryId,appName,appUrl,appDesc,explain')[0]
+	);
+
+// $reps = array_columns($app,'id,name,icon,appVersion,appSize,categoryId,appName,appUrl,appDesc,explain')[0];
 
 }else {
 
