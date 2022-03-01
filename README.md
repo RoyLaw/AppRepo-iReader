@@ -4,6 +4,8 @@
 
 搭建私人掌阅电子阅读器应用程序商店
 
+<p align="center">
+
 <!-- PROJECT SHIELDS -->
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -14,6 +16,9 @@
 
 
 <!-- PROJECT LOGO -->
+
+</p>
+
 <br />
 
 <p align="center">
