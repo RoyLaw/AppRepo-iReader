@@ -4,8 +4,10 @@
 
 搭建私人掌阅电子阅读器应用程序商店
 
-<p align="center">
+<br />
 
+<p align="center">
+  
 <!-- PROJECT SHIELDS -->
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -16,12 +18,7 @@
 
 
 <!-- PROJECT LOGO -->
-
-</p>
-
-<br />
-
-<p align="center">
+  
   <a href="https://github.com/RoyLaw/AppRepo-iReader">
     <img src="logo.png" alt="Logo" width="80" height="80">
   </a>
