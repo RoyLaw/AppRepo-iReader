@@ -15,10 +15,10 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-
+</p>
 
 <!-- PROJECT LOGO -->
-  
+<p align="center">  
   <a href="https://github.com/RoyLaw/AppRepo-iReader">
     <img src="logo.png" alt="Logo" width="80" height="80">
   </a>
