@@ -69,8 +69,6 @@ $reps = array(
 	'body'=>array_columns($app,'id,name,icon,appVersion,appSize,categoryId,appName,appUrl,appDesc,explain')[0]
 	);
 
-// $reps = array_columns($app,'id,name,icon,appVersion,appSize,categoryId,appName,appUrl,appDesc,explain')[0];
-
 }else {
 
 $reps = array('record'=>'not found');
